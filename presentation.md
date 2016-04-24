@@ -3,14 +3,21 @@
 ---
 ![](images/netflix-ui-dd-spanish.jpg)
 
+^ Netflix is global internet TV service
+available in over 190 countries
+localized to over 20 languages
+
 ---
 ![](images/netflix-dvd.jpg)
 
 ---
-Netflix streaming service started in 2008
+Netflix streaming service started in 2007
 
 ---
-Oracle outage
+started with a datacenter
+
+^
+we weren't good at building datacenters
 
 ---
 Migrate to the cloud
@@ -40,21 +47,26 @@ Migrate to the cloud
 
 ^ I will start with an example
 
+
 ---
-- create an *installable* Java microservice
-- standup a Netflix OSS AWS *infrastructure*
-- package and deploy to cloud
+- create an installable Java microservice
+- install and bake a microservice
+- define our AWS deployment
+- create a deployment pipeline
 
 ---
 ![fit](images/pipeline.png)
 
 ---
-![fit](images/pipeline-step1.png)
+- create an installable Java microservice
+- *install and bake a microservice*
+- *define our AWS deployment*
+- *construct a deployment pipeline*
 
 ---
 # A simple microservice
 
-- Java 8 (GROOVY?)
+- Groovy
 - Spring Boot
 
 ---
@@ -67,7 +79,7 @@ Migrate to the cloud
 ![fit](images/gradle-war.png)
 
 ---
-![fit left](images/build-output-1.png)
+![fit left autoplay](movies/gradle-build.mov)
 
 let's run a build
 
@@ -78,7 +90,7 @@ let's run a build
 gives us a runnable app
 
 ---
-![fit](images/pipeline-step2.png)
+![fit](images/pipeline.png)
 
 ^ - go back to our pipeline
 - need to convert code to Debian
@@ -121,7 +133,7 @@ ospackage *plugin*
 ![fit](images/gradle-ospackage-zoom.png)
 
 ---
-![fit left](images/build-output-2.png)
+![fit left autoplay](movies/gradle-build-deb.mov)
 
 let's build a *Debian* package
 
@@ -132,7 +144,10 @@ let's build a *Debian* package
 produces a *Debian* package
 
 ---
-![fit](images/pipeline-step3.png)
+- *create an installable Java microservice*
+- install and bake a microservice
+- *define our AWS deployment*
+- *construct a deployment pipeline*
 
 ---
 unit of deployment
@@ -161,34 +176,83 @@ helloworld_1.0.0_all.deb`
 
 ![fit](images/aminator-output.png)
 
----
-![fit](images/pipeline-step4.png)
+^ -e environment
+-b base ami image
 
 ---
-# AWS (to cover)
-- Auto scaling group concept
-- map an AMI to an ASG
-- ASG's contain homogenous instances
-- new deployments create new ASG's
-- ASG's are essentially versioned
-- How do you group ASG's to an application?
+![fit](images/deploy-time.png)
+
+---
+![fit](images/deploy-time-annotated.png)
+
+---
+- *create an installable Java microservice*
+- *install and bake a microservice*
+- define our AWS deployment
+- *construct a deployment pipeline*
+
+---
+![fit](images/pipeline.png)
+
+---
+AWS - create instances
+
+---
+# minimal instance needs
+- security groups
+- launch configurations
+- elastic load balancers
+- Amazon Machine Image
+
+---
+auto-scaling groups
 
 ---
 ![fit](images/spinnaker.png)
 
 ---
-What's missing
-- commit to build to bake to deploy
--
+# Spinnaker
+
+- Cloud deployment & pipelines
+- microservice architecture
+- Java & Groovy Spring Boot microservices
+
+![right fit](images/spinnaker.png)
 
 ---
-# Deployment infrastructure
+![fit](images/spinnaker-app.png)
 
-- GitHub
-- Jenkins
-- Spinnaker
+---
+![fit](images/spinnaker-create-1.png)
+
+---
+![fit](images/spinnaker-create-2.png)
+
+---
+![fit](images/spinnaker-create-3.png)
+
+---
+- *create an installable Java microservice*
+- *install and bake a microservice*
+- *define our AWS deployment*
+- construct a deployment pipeline
 
 ---
 Continuous delivery
+
+---
+![fit](images/spinnaker-infrastructure.png)
+
+---
+![fit](images/spinnaker-ami.png)
+### Spinnaker community AMI
+
+---
+![fit](images/spinnaker-terraform.png)
+
+### Bastion, Jenkins & Spinnaker
+
+---
+![fit](images/spinnaker-pipeline.png)
 
 ---
