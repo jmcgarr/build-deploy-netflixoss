@@ -253,6 +253,47 @@ Continuous delivery
 ### Bastion, Jenkins & Spinnaker
 
 ---
+![fit right](images/jenkins-job.png)
+
+## Jenkins build job
+- checkout from Github
+- `./gradlew clean build buildDeb`
+- publish debian package
+
+---
+![fit](images/spinnaker-pipeline-setup-1.png)
+
+---
+![fit](images/spinnaker-pipeline-setup-2.png)
+
+---
+![fit](images/spinnaker-pipeline-setup-3.png)
+
+---
+![fit](images/spinnaker-pipeline-setup-4.png)
+
+---
 ![fit](images/spinnaker-pipeline.png)
 
 ---
+![fit](images/pipeline.png)
+
+---
+![fit](images/pipeline-second-asg.png)
+
+---
+![fit](images/pipeline-second-asg-2.png)
+
+---
+What's next?
+
+---
+- Eureka *(service discovery)*
+- Edda *(track cloud changes)*
+- Chaos Monkey *(kill prod instances)*
+
+---
+# Questions?
+### Mike McGarr
+### _*[@SonOfGarr](http://twitter.com/SonOfGarr)*_
+### _*[MikeMcGarr.com](http://www.mikemcgarr.com)*_
