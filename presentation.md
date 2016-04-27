@@ -1,7 +1,7 @@
-![](images/Netflix_Logo.jpg)
+![fit](images/Netflix_Logo.jpg)
 
 ---
-![](images/netflix-ui-dd-spanish.jpg)
+![fit](images/netflix-ui-dd-spanish.jpg)
 
 ^ Netflix is global internet TV service
 available in over 190 countries
@@ -20,7 +20,7 @@ started with a datacenter
 we weren't good at building datacenters
 
 ---
-Migrate to the cloud
+migrate to the cloud
 
 ---
 ![fit](images/aws.png)
@@ -79,15 +79,14 @@ Migrate to the cloud
 ![fit](images/gradle-war.png)
 
 ---
-![fit left autoplay](movies/gradle-build.mov)
+![fit autoplay](movies/gradle-build.mov)
 
-let's run a build
+^ let's run a build
 
 ---
-![fit right](images/build-output-1-tree.png)
+![fit right](images/build-output-1-tree-tall.png)
 
-*Gradle's Application Plugin*
-gives us a runnable app
+*Gradle's Application Plugin* gives us a runnable app
 
 ---
 ![fit](images/pipeline.png)
@@ -105,10 +104,8 @@ Immutable server pattern
 ---
 ![fit](images/nebula-vertical.png)
 
-^ should I remove this slide?
-
 ---
-![fit left](images/nebula-website.png)
+![75% left](images/nebula-website-tall.png)
 
 ## Nebula Plugins
 
@@ -120,25 +117,28 @@ metrics *plugin*
 test *plugin*
 publishing *plugin*
 ospackage *plugin*
+<br/>
+
+http://nebula-plugins.github.io
 
 ---
-![fit left](images/gradle-ospackage.png)
+![fit](images/gradle-ospackage.png)
 
-1. Add the *Nebula ospackage* plugin (blue)
-2. Define the *Debian* package content (red)
-
----
-![fit left](images/gradle-ospackage.png)
-
-![fit](images/gradle-ospackage-zoom.png)
+^ 1. Add the *Nebula ospackage* plugin (blue)
+^ 2. Define the *Debian* package content (red)
 
 ---
-![fit left autoplay](movies/gradle-build-deb.mov)
+![fit](images/gradle-ospackage.png)
 
-let's build a *Debian* package
+![fit inline](images/gradle-ospackage-zoom.png)
 
 ---
-![fit right](images/build-output-2-tree.png)
+![fit autoplay](movies/gradle-build-deb.mov)
+
+^ let's build a *Debian* package
+
+---
+![100% right](images/build-output-2-tree.png)
 
 *Nebula's* ospackage plugin
 produces a *Debian* package
@@ -161,9 +161,7 @@ unit of deployment
 ![fit](images/baseami-process.png)
 
 ---
-![fit left](images/aminator.png)
-
-Aminator
+![fit](images/aminator-logo-lg.png)
 
 ---
 ![fit](images/aminator-output.png)
@@ -195,29 +193,30 @@ helloworld_1.0.0_all.deb`
 ![fit](images/pipeline.png)
 
 ---
-AWS - create instances
+![fit](images/aws-launch-instance.png)
+
+## just launch an instance, right?
 
 ---
-# minimal instance needs
+# an instance needs
+- Amazon Machine Image (AMI)
 - security groups
 - launch configurations
 - elastic load balancers
-- Amazon Machine Image
+- auto-scaling groups
 
 ---
-auto-scaling groups
-
----
-![fit](images/spinnaker.png)
+![fit](images/spinnaker-lg.png)
 
 ---
 # Spinnaker
 
-- Cloud deployment & pipelines
+- Cloud infrastructure management
+- Deployment pipelines
 - microservice architecture
 - Java & Groovy Spring Boot microservices
 
-![right fit](images/spinnaker.png)
+![fit](images/spinnaker-lg.png)
 
 ---
 ![fit](images/spinnaker-app.png)
