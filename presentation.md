@@ -1,7 +1,13 @@
-![fit](images/Netflix_Logo.jpg)
+![](images/nflx-campus-2.jpg)
 
 ---
-![fit](images/netflix-ui-dd-spanish.jpg)
+![](images/reed-hastings-ces.jpg)
+
+^ Reed Hastings keynoted CES
+Announced NFLX in 130 additional countries
+
+---
+![](images/netflix-ui-dd-spanish-tall.jpeg)
 
 ^ Netflix is global internet TV service
 available in over 190 countries
@@ -13,10 +19,8 @@ localized to over 20 languages
 ---
 Netflix streaming service started in 2007
 
----
-started with a datacenter
-
 ^
+started with a datacenter
 we weren't good at building datacenters
 
 ---
@@ -47,6 +51,14 @@ migrate to the cloud
 
 ^ I will start with an example
 
+---
+![fit](images/netflix-tech-blog.png)
+
+^ lay the foundation for future posts
+4th most read Netflix Tech blog post
+1 = NFLX is 1/3 internet at peak
+2 = Chaos Monkey
+3 = Node.js in Flames
 
 ---
 - create an installable Java microservice
@@ -155,7 +167,7 @@ unit of deployment
 ---
 # Baking
 
-![fit inline](images/baking-process.png)
+![fit inline](images/baking-process-wide.png)
 
 ---
 ![fit](images/baseami-process.png)
@@ -178,10 +190,9 @@ helloworld_1.0.0_all.deb`
 -b base ami image
 
 ---
-![fit](images/deploy-time.png)
-
----
 ![fit](images/deploy-time-annotated.png)
+
+^
 
 ---
 - *create an installable Java microservice*
@@ -198,7 +209,7 @@ helloworld_1.0.0_all.deb`
 ## just launch an instance, right?
 
 ---
-# an instance needs
+# each instance needs
 - Amazon Machine Image (AMI)
 - security groups
 - launch configurations
@@ -217,6 +228,10 @@ helloworld_1.0.0_all.deb`
 - Java & Groovy Spring Boot microservices
 
 ![fit](images/spinnaker-lg.png)
+
+---
+![fit](images/spinnaker-ami.png)
+### Spinnaker community AMI
 
 ---
 ![fit](images/spinnaker-app.png)
@@ -241,10 +256,6 @@ Continuous delivery
 
 ---
 ![fit](images/spinnaker-infrastructure.png)
-
----
-![fit](images/spinnaker-ami.png)
-### Spinnaker community AMI
 
 ---
 ![fit](images/spinnaker-terraform.png)
@@ -284,12 +295,28 @@ Continuous delivery
 ![fit](images/pipeline-second-asg-2.png)
 
 ---
-What's next?
+# Where to next?
+- Edda *(track cloud changes)*
+- Eureka *(service discovery)*
+- Chaos Monkey *(kill prod instances)*
+- Atlas *(large scale metrics)*
 
 ---
-- Eureka *(service discovery)*
-- Edda *(track cloud changes)*
-- Chaos Monkey *(kill prod instances)*
+![](images/nflx-campus-1.jpg)
+### takeaways
+
+---
+
+# [fit] make applications
+# [fit] *easy to install*
+
+---
+# [fit] *make servers*
+# [fit] immutable
+
+---
+# [fit] the cloud is
+# [fit] *hard*
 
 ---
 # Questions?
