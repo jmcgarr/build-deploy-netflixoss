@@ -237,13 +237,13 @@ helloworld_1.0.0_all.deb`
 ![fit](images/spinnaker-app.png)
 
 ---
-![fit](images/spinnaker-create-1.png)
+![fit](images/spinnaker-create-app.png)
 
 ---
-![fit](images/spinnaker-create-2.png)
+![fit](images/spinnaker-create-security-group.png)
 
 ---
-![fit](images/spinnaker-create-3.png)
+![fit](images/spinnaker-create-elb.png)
 
 ---
 - *create an installable Java microservice*
@@ -271,10 +271,10 @@ Continuous delivery
 - publish debian package
 
 ---
-![fit](images/spinnaker-pipeline-setup-1.png)
+![fit](images/spinnaker-pipeline-create.png)
 
 ---
-![fit](images/spinnaker-pipeline-setup-2.png)
+![fit](images/spinnaker-pipeline-trigger.png)
 
 ---
 ![fit](images/spinnaker-pipeline-setup-3.png)
